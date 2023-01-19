@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google';
 import styles from '../styles/Home.module.css';
 import Metamask from './components/metamask';
 import Web3ModalV1 from './components/web3modal-v1';
+import Web3ModalV2 from './components/web3modal-v2';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -17,10 +18,11 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={styles.main}>
-
                 <Metamask />
-
+                <hr style={{ width: '100%' }} />
                 <Web3ModalV1 />
+                <hr style={{ width: '100%' }} />
+                <Web3ModalV2 />
             </main>
         </>
     );
